@@ -1,0 +1,561 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mudakukreatif — Bersama Kita Ciptakan Karya</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;600;700;900&family=Nunito:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <nav id="nav">
+      <div class="nav-inner">
+        <a
+          class="logo"
+          href="#"
+          onclick="
+            go('home');
+            return false;
+          "
+          >mudakukreatif
+          <div class="logo-dot"></div
+        ></a>
+        <ul class="nav-links" id="navLinks">
+          <li>
+            <a
+              href="#"
+              class="active"
+              onclick="
+                go('home');
+                return false;
+              "
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              onclick="
+                go('events');
+                return false;
+              "
+              >Event</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              onclick="
+                go('gallery');
+                return false;
+              "
+              >Gallery</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              onclick="
+                go('profile');
+                return false;
+              "
+              >Profil</a
+            >
+          </li>
+        </ul>
+        <button class="ham" id="ham" onclick="toggleNav()">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- ══════ HOME ══════ -->
+    <div class="page active" id="page-home">
+      <section class="hero">
+        <div class="hero-left">
+          <div class="hero-eyebrow">
+            <div class="pill">✦ Live</div>
+            <span>Komunitas Kreatif — Bogor</span>
+          </div>
+          <h1>
+            <span class="w1">Bersama</span>
+            <span class="w2 grad">Ciptakan</span>
+            <span class="w3">Karya.</span>
+          </h1>
+          <p class="hero-sub">
+            Platform kolaborasi untuk talenta-talenta muda yang penuh semangat.
+            Desain, musik, foto, tulisan — semua punya tempat di sini.
+          </p>
+          <div class="hero-btns">
+            <a
+              href="#"
+              class="btn-l"
+              onclick="
+                go('profile');
+                return false;
+              "
+              >Gabung Sekarang →</a
+            >
+            <a
+              href="#"
+              class="btn-g"
+              onclick="
+                go('events');
+                return false;
+              "
+              >Lihat Event</a
+            >
+          </div>
+        </div>
+
+        <div class="hero-right">
+          <div class="hero-photo-stack">
+            <div class="hcard">
+              <img
+                src="https://placehold.co/200x260/ff4f5e/fff?text=Foto+1"
+                alt="Kegiatan 1"
+              />
+            </div>
+            <div class="hcard">
+              <img
+                src="https://placehold.co/230x290/8b5cf6/fff?text=Foto+2"
+                alt="Kegiatan 2"
+              />
+            </div>
+            <div class="hcard">
+              <img
+                src="https://placehold.co/180x220/00c8ff/fff?text=Foto+3"
+                alt="Kegiatan 3"
+              />
+            </div>
+          </div>
+          <div class="hero-badge">
+            <span class="big">3<span style="font-size: 1.2rem">th</span></span>
+            <span class="sm">Tahun Berdiri</span>
+          </div>
+        </div>
+
+        <div class="hero-stats-bar">
+          <div class="hstat">
+            <span class="hstat-n">150+</span>
+            <div class="hstat-l">Anggota Aktif</div>
+          </div>
+          <div class="hstat">
+            <span class="hstat-n">25+</span>
+            <div class="hstat-l">Event per Tahun</div>
+          </div>
+          <div class="hstat">
+            <span class="hstat-n">50+</span>
+            <div class="hstat-l">Karya Dipamerkan</div>
+          </div>
+          <div class="hstat">
+            <span class="hstat-n">6</span>
+            <div class="hstat-l">Bidang Kreatif</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="about">
+        <div class="about-inner">
+          <div class="about-top">
+            <div class="about-num">01</div>
+            <div class="about-headline">
+              <div class="stag">Tentang Kami</div>
+              <h2>
+                Kreativitas<br />tanpa batas,<br />komunitas<br />tanpa sekat.
+              </h2>
+              <p class="about-desc">
+                Mudakukreatif menghimpun talenta-talenta muda untuk
+                berkolaborasi, belajar, dan menciptakan karya-karya inspiratif.
+                Kami percaya setiap orang punya potensi kreatif luar biasa.
+              </p>
+            </div>
+          </div>
+
+          <div class="about-cols">
+            <div class="about-col">
+              <span class="num">01</span>
+              <h4>Visi Kami</h4>
+              <p>
+                Menjadi wadah terdepan bagi generasi muda untuk mengembangkan
+                kreativitas dan berkontribusi positif bagi masyarakat.
+              </p>
+            </div>
+            <div class="about-col">
+              <span class="num">02</span>
+              <h4>Misi Kami</h4>
+              <p>
+                Menyelenggarakan kegiatan edukatif, memfasilitasi kolaborasi,
+                dan membangun ekosistem kreatif yang berkelanjutan.
+              </p>
+            </div>
+            <div class="about-col">
+              <span class="num">03</span>
+              <h4>Nilai Kami</h4>
+              <p>
+                Inklusif, kolaboratif, progresif, dan berdampak nyata bagi
+                komunitas sekitar.
+              </p>
+            </div>
+          </div>
+
+          <div class="about-values-row">
+            <div class="vcard vc1">
+              <div class="ico">🤝</div>
+              <h4>Inklusif</h4>
+              <p>Terbuka untuk semua kalangan tanpa memandang latar belakang</p>
+            </div>
+            <div class="vcard vc2">
+              <div class="ico">🚀</div>
+              <h4>Kolaboratif</h4>
+              <p>Mendorong kerjasama dan saling mendukung antar anggota</p>
+            </div>
+            <div class="vcard vc3">
+              <div class="ico">💡</div>
+              <h4>Progresif</h4>
+              <p>Selalu berinovasi dan mengikuti perkembangan zaman</p>
+            </div>
+            <div class="vcard vc4">
+              <div class="ico">🎯</div>
+              <h4>Berdampak</h4>
+              <p>Karya yang lahir berkontribusi nyata bagi masyarakat</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- /page-home -->
+
+    <!-- ══════ EVENTS ══════ -->
+    <div class="page" id="page-events">
+      <section class="events">
+        <div class="events-inner">
+          <div class="ev-header">
+            <h2>Event &amp;<br />Kegiatan</h2>
+            <div class="ev-header-right">
+              <div class="stag" style="margin-bottom: 0.75rem">Agenda 2025</div>
+              <p>Workshop, kompetisi, showcase &amp; pameran sepanjang tahun</p>
+            </div>
+          </div>
+
+          <div class="ev-layout">
+            <!-- featured -->
+            <div class="ev-featured">
+              <div class="ev-feat-img">
+                <img
+                  src="https://placehold.co/600x260/0a0a0f/d4ff00?text=Workshop+Desain+Grafis"
+                  alt="Workshop Desain Grafis"
+                />
+                <div class="ev-feat-type">🎨 Featured</div>
+              </div>
+              <div class="ev-feat-body">
+                <div class="ev-feat-date">25 Agustus 2025</div>
+                <h3>Workshop Desain Grafis</h3>
+                <p class="ev-loc">📍 Basecamp Mudakukreatif, Waru</p>
+                <p>
+                  Belajar dasar-dasar desain grafis dengan software modern.
+                  Cocok untuk pemula yang mau mulai karir di bidang desain.
+                </p>
+              </div>
+            </div>
+
+            <!-- small events -->
+            <div class="ev-small">
+              <div class="ev-sm-icon esi1">🏆</div>
+              <div class="ev-sm-body">
+                <div class="ev-sm-date">2 Sep 2025</div>
+                <h4>Lomba Logo Design</h4>
+                <p class="ev-sm-loc">📍 Online & Offline</p>
+              </div>
+            </div>
+            <div class="ev-small">
+              <div class="ev-sm-icon esi2">🎵</div>
+              <div class="ev-sm-body">
+                <div class="ev-sm-date">15 Sep 2025</div>
+                <h4>Music Showcase</h4>
+                <p class="ev-sm-loc">📍 Taman Budaya Parung</p>
+              </div>
+            </div>
+            <div class="ev-small">
+              <div class="ev-sm-icon esi3">📷</div>
+              <div class="ev-sm-body">
+                <div class="ev-sm-date">22 Sep 2025</div>
+                <h4>Photography Walk</h4>
+                <p class="ev-sm-loc">📍 Setu Babakan</p>
+              </div>
+            </div>
+            <div class="ev-small">
+              <div class="ev-sm-icon esi4">✍️</div>
+              <div class="ev-sm-body">
+                <div class="ev-sm-date">5 Okt 2025</div>
+                <h4>Creative Writing Workshop</h4>
+                <p class="ev-sm-loc">📍 Perpustakaan Daerah Parung</p>
+              </div>
+            </div>
+            <div class="ev-small">
+              <div class="ev-sm-icon esi5">🎪</div>
+              <div class="ev-sm-body">
+                <div class="ev-sm-date">20 Okt 2025</div>
+                <h4>Pameran Karya Anggota</h4>
+                <p class="ev-sm-loc">📍 Galeri Seni Bogor</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- ══════ GALLERY ══════ -->
+    <div class="page" id="page-gallery">
+      <section class="gallery">
+        <div class="gallery-inner">
+          <div class="gal-header">
+            <div>
+              <div
+                class="stag"
+                style="
+                  background: var(--violet);
+                  color: white;
+                  margin-bottom: 0.75rem;
+                "
+              >
+                Galeri
+              </div>
+              <h2>Karya &amp;<br />Kegiatan Kami</h2>
+            </div>
+            <p>Hover tiap foto buat lihat keterangannya ✦</p>
+          </div>
+
+          <div class="gal-bento">
+            <div class="gb">
+              <img
+                src="https://placehold.co/700x220/ff4f5e/fff?text=Workshop+Desain"
+                alt="Workshop Desain"
+              />
+              <div class="gb-cap">
+                <h4>Workshop Desain</h4>
+                <span>Grafis & Visual</span>
+              </div>
+            </div>
+            <div class="gb">
+              <img
+                src="https://placehold.co/400x220/8b5cf6/fff?text=Showcase+Musik"
+                alt="Showcase Musik"
+              />
+              <div class="gb-cap">
+                <h4>Showcase Musik</h4>
+                <span>Penampilan Bulanan</span>
+              </div>
+            </div>
+            <div class="gb">
+              <img
+                src="https://placehold.co/200x400/00c8ff/fff?text=Photo+Walk"
+                alt="Photo Walk"
+              />
+              <div class="gb-cap">
+                <h4>Photo Walk</h4>
+                <span>Fotografi Bersama</span>
+              </div>
+            </div>
+            <div class="gb">
+              <img
+                src="https://placehold.co/400x180/d4ff00/333?text=Kompetisi"
+                alt="Kompetisi"
+              />
+              <div class="gb-cap">
+                <h4>Kompetisi Desain</h4>
+                <span>Logo & Branding</span>
+              </div>
+            </div>
+            <div class="gb">
+              <img
+                src="https://placehold.co/600x180/00e5a0/333?text=Performance+Art"
+                alt="Performance Art"
+              />
+              <div class="gb-cap">
+                <h4>Performance Art</h4>
+                <span>Seni Pertunjukan</span>
+              </div>
+            </div>
+            <div class="gb">
+              <img
+                src="https://placehold.co/400x240/ffb347/333?text=Team+Building"
+                alt="Team Building"
+              />
+              <div class="gb-cap">
+                <h4>Team Building</h4>
+                <span>Bonding Anggota</span>
+              </div>
+            </div>
+            <div class="gb">
+              <img
+                src="https://placehold.co/400x240/ec4899/fff?text=Pameran+Karya"
+                alt="Pameran Karya"
+              />
+              <div class="gb-cap">
+                <h4>Pameran Karya</h4>
+                <span>Showcase Tahunan</span>
+              </div>
+            </div>
+            <div class="gb">
+              <img
+                src="https://placehold.co/400x240/6366f1/fff?text=Creative+Writing"
+                alt="Creative Writing"
+              />
+              <div class="gb-cap">
+                <h4>Creative Writing</h4>
+                <span>Nulis Bareng</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- ══════ PROFILE ══════ -->
+    <div class="page" id="page-profile">
+      <section class="profile-sec">
+        <div class="profile-inner">
+          <div class="stag" style="margin-bottom: 2rem">Profil Komunitas</div>
+          <div class="profile-grid">
+            <!-- left: founder poster sticky -->
+            <div class="founder-poster">
+              <div class="founder-photo">
+                <div class="founder-photo-placeholder">👨‍🎨</div>
+                <div class="founder-photo-label">Founder</div>
+              </div>
+              <div class="founder-info-box">
+                <div class="f-name">Rudi Hartono</div>
+                <div class="f-role">✦ Pendiri & Pembina</div>
+                <p class="f-bio">
+                  Creative director dengan 8+ tahun pengalaman. Passion-nya
+                  memberdayakan generasi muda lewat seni dan kreativitas.
+                </p>
+                <div class="f-btns">
+                  <a href="https://wa.me/62856xxxxxxxx" class="fb1"
+                    >📱 WhatsApp</a
+                  >
+                  <a href="mailto:rudi@mudakukreatif.web.id" class="fb2"
+                    >✉️ Email</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- right column -->
+            <div class="profile-right">
+              <div class="pcard">
+                <div class="pcard-title">📊 Statistik Komunitas</div>
+                <div class="stats-row">
+                  <div class="stat-big sb1">
+                    <span class="n n1">150+</span>
+                    <div class="l">Anggota Aktif</div>
+                  </div>
+                  <div class="stat-big sb2">
+                    <span class="n n2">25+</span>
+                    <div class="l">Event/Tahun</div>
+                  </div>
+                  <div class="stat-big sb3">
+                    <span class="n n3">50+</span>
+                    <div class="l">Karya Dipamerkan</div>
+                  </div>
+                  <div class="stat-big sb4">
+                    <span class="n n4">3</span>
+                    <div class="l">Tahun Berdiri</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="pcard">
+                <div class="pcard-title">📍 Info Komunitas</div>
+                <div class="info-3col">
+                  <div class="info-block">
+                    <h4>Alamat Basecamp</h4>
+                    <p>
+                      Jl. Raya Waru No. 123<br />RT 02/01, Desa Waru<br />Kec.
+                      Parung, Kab. Bogor<br />Jawa Barat 16330
+                    </p>
+                  </div>
+                  <div class="info-block">
+                    <h4>Jadwal Kegiatan</h4>
+                    <p>
+                      Workshop: Sabtu 14–17 WIB<br />Diskusi: Rabu 19–21 WIB<br />Open
+                      House: Minggu pertama tiap bulan
+                    </p>
+                  </div>
+                  <div class="info-block">
+                    <h4>Fokus Bidang</h4>
+                    <ul>
+                      <li>Desain Grafis & Visual</li>
+                      <li>Fotografi & Videografi</li>
+                      <li>Musik & Audio</li>
+                      <li>Creative Writing</li>
+                      <li>Digital Art & UI/UX</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="pcard">
+                <div class="pcard-title">🌐 Temukan Kami</div>
+                <div class="soc-row">
+                  <a href="https://instagram.com/mudakukreatif" class="stile"
+                    ><div class="stile-ico">📷</div>
+                    <div class="stile-name">Instagram</div>
+                    <div class="stile-h">@mudakukreatif</div></a
+                  >
+                  <a href="https://tiktok.com/@mudakukreatif" class="stile"
+                    ><div class="stile-ico">🎵</div>
+                    <div class="stile-name">TikTok</div>
+                    <div class="stile-h">@mudakukreatif</div></a
+                  >
+                  <a href="https://youtube.com/mudakukreatif" class="stile"
+                    ><div class="stile-ico">📺</div>
+                    <div class="stile-name">YouTube</div>
+                    <div class="stile-h">Mudakukreatif</div></a
+                  >
+                  <a href="https://discord.gg/mudakukreatif" class="stile"
+                    ><div class="stile-ico">💬</div>
+                    <div class="stile-name">Discord</div>
+                    <div class="stile-h">Mudakukreatif</div></a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="cta">
+        <div class="cta-inner">
+          <h2>Tertarik<br /><em>Gabung?</em></h2>
+          <p>
+            Hubungi kami lewat WhatsApp atau langsung dateng ke basecamp saat
+            jam operasional!
+          </p>
+          <div class="cta-btns">
+            <a href="https://wa.me/62856xxxxxxxx" class="cta-btn-w"
+              >📱 Hubungi Admin</a
+            >
+            <a href="mailto:info@mudakukreatif.web.id" class="cta-btn-o"
+              >✉️ Email Kami</a
+            >
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <footer>
+      <div class="foot-logo">mudakukreatif.</div>
+      <p>&copy; 2025 Mudakukreatif Community — Bersama Kita Ciptakan Karya</p>
+      <p style="margin-top: 0.25rem">
+        Desa Waru, Kec. Parung, Kabupaten Bogor, Jawa Barat
+      </p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
