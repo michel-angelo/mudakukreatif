@@ -1332,3 +1332,14 @@ footer p {
     padding-bottom: 0;
   }
 }
+
+/* Efek silang pada hamburger menu saat terbuka */
+.nav-links.open ~ .ham span:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+.nav-links.open ~ .ham span:nth-child(2) {
+  opacity: 0;
+}
+.nav-links.open ~ .ham span:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
